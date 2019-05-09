@@ -1,8 +1,10 @@
 # DateTimeFormatterParseBug
-DateTimeFormatter will not properly throw an exception in certain parsing cases.
 
-Per the spec, CLOCK_HOUR_OF_AMPM should throw a DateTimeParseException when the Hour value of the input string is 00.
-Per the spec, HOUR_OF_AMPM should throw a DateTimeParseException when the Hour value of the input string is 12.
+DateTimeFormatter will not properly throw an exception in certain parsing cases.  
+
+Per the spec, CLOCK_HOUR_OF_AMPM should throw a DateTimeParseException when the Hour value of the input string is 00.  
+
+Per the spec, HOUR_OF_AMPM should throw a DateTimeParseException when the Hour value of the input string is 12.  
 
 |      input             |   Parse Format     |   Expected             | Actual            |
 |------------------------|--------------------|------------------------|-------------------|
